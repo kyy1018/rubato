@@ -1,0 +1,187 @@
+@charset "utf-8";
+@media screen and (min-width:1200px) {
+    #WRAP{width: 100%;}
+    header, main, section, aside, footer{
+        width: 100%; float: left; position: relative;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    #H-WRAP{
+        width: 1200px; height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        position: relative;
+        top: 30px;
+        cursor: pointer;
+    }
+
+    #menu{
+        width: 1000px; height: 100px;
+        position: relative;
+        top: 50px; left: 230px;
+    }
+    #menu>li{
+        width: 20%;
+        text-align: center;
+        font: 900 20px/100px 'Hahmlet';
+        float: left;
+    }
+    #menu>li a{transition-duration: 0.5s;}
+    #menu>li:hover a{color: darkgray;}
+
+    #login{
+        width: 300px; height: 20px;
+        font: 500 15px/20px 'Hahmlet';
+        float: right;
+        position: relative;
+        top: 30px;
+        text-align: center;
+    }
+    #login>li{float: left;}
+    #login>li:hover a{color: gray;}
+
+    /* HEADER END */
+
+    main{
+        height: 500px;
+        background-image: url(../img/main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* MAIN END */
+
+    #AS-WRAP{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    aside{width: 20%;}
+    #a_menu{
+        height: 250px;
+    }
+    #a_menu>li:first-child{
+        height: 50px;
+        font: 700 18px/50px 'Hahmlet';
+        background-color: black;
+        color: white;
+        border-bottom: 0;
+    }
+    #a_menu>li:first-child:hover{background-color: black;}
+    #a_menu>li{
+        height: 40px;
+        border-bottom: 2px solid gainsboro;
+        font: 600 14px/40px 'Hahmlet';
+        transition-duration: 0.5s;
+    }
+    #a_menu>li:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #a_menu>li:hover a{
+        color: white;
+    }
+    /* ASIDE END */
+
+    section{
+        width: 80%;
+        height: 1000px;
+        float: left;
+        overflow: hidden;
+    }
+
+    /* RADIO BUTTON */
+    #tab-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .m_btn{
+        width: 10px; height: 10px;
+        text-align: center;
+        display: block;
+        color: darkgray;
+        float: left; 
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;}
+    
+    .m_btn:first-child{margin-left: 0;}
+    .m_btn:hover{color: dimgray;}
+
+    #tab-detail{
+        width: 100%;
+        position: relative;
+        top: 30px;
+        transition-duration: 0.5s;
+    }
+
+    .title{
+        height: 50px;
+        font: 800 25px/50px 'Hahmlet';
+        border-bottom: 2px dotted lightgray;
+        margin-left: 30px;
+        color: black;
+    }
+
+    #tab{
+        width: 4500px; height: 900px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .detail{
+        width: 850px; 
+        font: 500 14px/24px 'Hahmlet';
+        color: #333;
+        margin: 0 25px;
+        float: left;
+    }
+    #dslr{
+        width: 400px; height: 328px;
+    }
+    .detail>img{
+        margin: 50px auto;
+        width: 60%; 
+    }
+    .detail>span{
+        display: block;
+        width: 95%;
+        position: relative;
+        left: 5%;
+    }
+
+    #menu-01:checked ~ #tab-detail{right: -10px;}
+    #menu-02:checked ~ #tab-detail{right: 890px;}
+    #menu-03:checked ~ #tab-detail{right: 1790px;}
+    #menu-04:checked ~ #tab-detail{right: 2690px;}
+    #menu-05:checked ~ #tab-detail{right: 3590px;}
+
+    /* SECTION END */
+
+    footer{
+        height: 200px;
+        background-color: black;
+    }
+    #F-WRAP{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    }
+
+    #f-detail{
+        color: white;
+        font: 500 14px/20px 'Hahmlet';
+    }
+    /* FOOTER END */
+}
+/* PC END */

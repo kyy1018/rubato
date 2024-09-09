@@ -1,0 +1,200 @@
+@charset "utf-8";
+@media screen and (max-width:1199px) and (min-width:768px) {
+    #WRAP{width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body{font-size: 16px;}
+    header, main, section, aside, footer{
+        width: 100%; float: left; position: relative;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    /* 기준 960px */
+
+    #H-WRAP{
+        width: 80.066722%; height: 250px;
+        /* 960px */
+    }
+
+    #logo{
+        width: 200px; height: 100px;
+        margin: 30px auto;
+        cursor: pointer;
+    }
+
+    #menu{
+        width:  100%; height: 100px;
+        position: relative;
+        bottom: 10px;
+    }
+    #menu>li{
+        width: 20%;
+        text-align: center;
+        font: 900 20px/100px 'Hahmlet';
+        float: left;
+    }
+    #menu>li a{transition-duration: 0.5s;}
+    #menu>li:hover a{color: darkgray;}
+
+    #login{
+        width: 300px; height: 20px;
+        font: 500 14px/20px 'Hahmlet';
+        float: right;
+        position: relative;
+        bottom: 115px;
+        display: flex;
+        justify-content: center;
+    }
+    #login>li{float: left;}
+    #login>li:hover a{color: gray;}
+
+    /* HEADER END */
+
+    main{
+        height: 500px;
+        background-image: url(../img/main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /* MAIN END */
+
+    #AS-WRAP{
+        width: 80.066722%;
+    }
+    aside{width: 100%;}
+    #a_menu>li:first-child{
+        width: 15%;
+        float: left;
+        font-size: 1.6vw;
+        font-weight: 700;
+        font-family: 'Hahmlet';
+        background-color: black;
+        text-align: center;
+        color: white;
+        border-right: 0;
+    }
+    #a_menu>li:first-child:hover{background-color: black;}
+    #a_menu>li{
+        width: auto;
+        float: left;
+        text-align: center;
+        border-right: 2px solid gainsboro;
+        font-size: 1.6vw;
+        font-weight: 600;
+        font-family: 'Hahmlet';
+        padding: 2% 6.6px;
+        transition-duration: 0.5s;
+        box-sizing: border-box;
+    }
+    #a_menu>li:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #a_menu>li:hover a{
+        color: white;
+    }
+    /* ASIDE END */
+
+    section{
+        width: 100%;
+        height: 1000px;
+        float: left;
+        overflow: hidden;
+    }
+
+    /* RADIO BUTTON */
+    #tab-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .m_btn{
+        width: 10px; height: 10px;
+        text-align: center;
+        display: block;
+        color: darkgray;
+        float: left; 
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;}
+    
+    .m_btn:first-child{margin-left: 0;}
+    .m_btn:hover{color: dimgray;}
+
+    #tab-detail{
+        width: 100%;
+        position: relative;
+        top: 30px;
+        transition-duration: 0.5s;
+    }
+
+    .title{
+        height: 50px;
+        font: 800 25px/50px 'Hahmlet';
+        border-bottom: 2px dotted lightgray;
+        margin-left: 30px;
+        color: black;
+    }
+
+    #tab{
+        width: 468.75%; height: 900px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .detail{
+        width: 20%; 
+        font: 500 14px/24px 'Hahmlet';
+        color: #333;
+        margin: 0 25px;
+        float: left;
+    }
+    #dslr{
+        width: 400px; height: 328px;
+        margin: 0 auto;
+    }
+    .detail>img{
+        margin: 30px auto;
+        width: 80%; 
+    }
+    .detail>span{
+        display: block;
+        width: 95%;
+        position: relative;
+        left: 5%;
+    }
+
+    #menu-01:checked ~ #tab-detail{right: 0px;}
+    #menu-02:checked ~ #tab-detail{right: 91%;}
+    #menu-03:checked ~ #tab-detail{right: 185%}
+    #menu-04:checked ~ #tab-detail{right: 279%;}
+    #menu-05:checked ~ #tab-detail{right: 373%;}
+
+    /* SECTION END */
+
+    footer{
+        height: 200px;
+        background-color: black;
+    }
+    #F-WRAP{
+        width: 80.066722%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    }
+
+    #f-detail{
+        color: white;
+        font: 500 14px/20px 'Hahmlet';
+    }
+    /* FOOTER END */
+}
+/* PAD END */
